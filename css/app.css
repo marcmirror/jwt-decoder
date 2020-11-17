@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    flex: 1;
+}
+
+label {
+    display: none;
+}
+
+#jwt-in {
+    max-width: 40rem;
+    min-height: 12rem;
+    max-height: 30rem;
+    background-color: #00000055;
+}
+
+.jwt-out {
+    white-space: pre;
+}
+
+.disabled:hover {
+    cursor: not-allowed;
+}
+
+input:disabled {
+    pointer-events: all;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.expired {
+    color: #C62828FF
+}
+
+footer {
+    text-align: center;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JWT Decoder</title>
+
+    <link rel="icon" href="favicon.svg">
+    <link rel="stylesheet" href="css/pico.classless.min.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+<main>
+    <label for="jwt-in"></label>
+    <textarea id="jwt-in" type="text" placeholder="Paste your JWT in here ..." onkeyup="decodeJwt(this.value)">eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWUsImlhdCI6MTY2NjI4OTk1OSwiZXhwIjoxNjY2MjkzNTU5fQ.UJ5qUhTLa3rcffDy5n3FZW0aBpHdbXV54fPJdlRgkUk</textarea>
+
+    <code id="jwt-out-header" class="jwt-out hidden"></code>
+    <code id="jwt-out-payload" class="jwt-out hidden"></code>
+</main>
+
+<footer>
+    <small>
+        Made by <a href="https://marc.codeberg.page" target="_blank">Marc</a> &#8900;
+        <a href="https://codeberg.org/marc/jwt-decoder" target="_blank">Licensed under AGPL v3</a>
+    </small>
+</footer>
+
+<script src="app.js"></script>
+
+</body>
+</html>
