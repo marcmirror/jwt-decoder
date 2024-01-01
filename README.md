@@ -1,3 +1,5 @@
+# This is a read-only mirror of the git repo at https://codeberg.org/marc/jwt-decoder
+
 # JWT Decoder
 
 A simple, zero dependency, client-side web app for decoding JSON Web Tokens (JWT).
